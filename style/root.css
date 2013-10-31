@@ -1,0 +1,90 @@
+@CHARSET "UTF-8";
+
+#wrapper {
+	margin:			0 auto;
+	font-family:	Arial;
+	color:			#666;
+}
+
+#leftColumn {
+	width:			20%;
+	float:			left;
+}
+#rightColumn {
+	width:			79%;
+	float:			right;
+}
+
+#rightColumn #pages a {
+	padding-top:		6.0em;
+	padding-bottom:		1.0em;
+	width:				10%;
+}
+
+#rightColumn #pages a,
+.navigation {
+	display:			block;
+	float:				left;
+	text-decoration:	none;
+	font-size:			1.25em;
+	letter-spacing:		0.1em;
+	color:				#666;
+}
+
+.navigation {
+	width:				100%;
+}
+
+#rightColumn #pages a:hover,
+.navigation a:hover {
+	text-decoration:	underline !important;
+}
+
+#leftColumn .logo img {
+	margin-left:	auto;
+	margin-right:	auto;
+	max-width:		100%;
+	max-height:		100%;
+}
+
+#leftColumn .logo,
+#rightColumn #pages {
+	height:				150px;
+}
+
+#rightColumn #stage {
+	width:				85%;
+}
+#rightColumn #stage img {
+	max-width:			100%;
+	max-height:			100%;
+}
+
+#leftColumn .navigation {
+	font-size:			0.8em;
+}
+#leftColumn .navigation .section {
+	font-size:			1.1em;
+	font-weight:		bold;
+	margin-top:			1.0em;
+	margin-bottom:		0.2em;
+	color:				#333;
+}
+
+#leftColumn ul li {
+	list-style-type:	none;
+	margin-top:			0.3em;
+}
+
+#leftColumn li a {
+	color:				#666;
+	text-decoration:	none;
+}
+
+#leftColumn li a:hover {
+	text-decoration:	underline;
+}
+
+.clear {
+	clear:				both;
+}

@@ -26,30 +26,37 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 				
 				<div class="navigation">
 					<ul>
-						<li class="section">Illustration</li>
-						<li>this one thing</li>
-						<li>this one thing</li>
-						<li>this one thing</li>
-						<li>this one thing</li>
-						<li>this one thing</li>
 						
+						<li class="section">Drawings</li>
+<?php
+	foreach ($GLOBALS['availableDrawings'] as $title => $filename) {
+		echo '<li> <a href="/drawings.php?title=' . $title . '">' . $title . '</a></li>';
+	}
+?>
+						<li class="section">Sculpture</li>
+<?php
+	foreach ($GLOBALS['availableSculpture'] as $title => $filename) {
+		echo '<li> <a href="/sculpture.php?title=' . $title . '">' . $title . '</a></li>';
+	}
+?>
 						<li class="section">Photo</li>
 <?php
-	foreach ($GLOBALS['availablePhotos'] as $title => $filename) {
+	foreach ($GLOBALS['availablePhoto'] as $title => $filename) {
 		echo '<li> <a href="/photo.php?title=' . $title . '">' . $title . '</a></li>';
 	}
 ?>						
-						<li class="section">Poetry</li>
-						<li>this one thing</li>
-						<li>this one thing</li>
-
-						<li class="section">Prose</li>
-						<li>this one thing</li>
-						<li>this one thing</li>
-
-						<li class="section">Other</li>
-						<li>this one thing</li>
-						<li>this one thing</li>
+						<li class="section">Prints</li>
+<?php
+	foreach ($GLOBALS['availablePrints'] as $title => $filename) {
+		echo '<li> <a href="/prints.php?title=' . $title . '">' . $title . '</a></li>';
+	}
+?>						
+						<li class="section">Words</li>
+<?php
+	foreach ($GLOBALS['availableWords'] as $title => $filename) {
+		echo '<li> <a href="/words.php?title=' . $title . '">' . $title . '</a></li>';
+	}
+?>
 					</ul>
 				</div> <!-- .navigation -->
 				

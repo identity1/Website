@@ -1,29 +1,26 @@
 <?php
 // the /images/photos folder should have these files, 
 // and there's a /thumbnails folder inside that folder which has images with the same name.
-$GLOBALS['availablePhoto'] = array(
-	'Title' =>				'little one_20130918.jpg',
-	'Groundwater' => 		'groundwater_20130918.jpg',
-	'Russian Doll' =>		'russian doll_20130924.jpg',
+$GLOBALS['availablePhotos'] = array(
+	'Title' =>				array( 'filenames' => array('little-one.jpg'), 'caption' => 'little-one.html' ),
+	'Groundwater' => 		array( 'filenames' => array('groundwater.jpg'), 'caption' => 'groundwater.html' ),
+	'Russian Doll' =>		array( 'filenames' => array('russian-doll.jpg'), 'caption' => 'russian-doll.html' ),
 );
 $GLOBALS['availableDrawings'] = array(
-	'Airport' =>			'airport_20130917.jpg',
-	'Pop' => 				'pop_20130918.jpg',
-	'Undone' =>				'undone_20130918.jpg',
+	'Airport' =>			array( 'filenames' => array('airport.jpg'), 'caption' => 'airport.html' ),
+	'Pop' => 				array( 'filenames' => array('pop.jpg'), 'caption' => 'pop.html' ),
+	'Undone' =>				array( 'filenames' => array('undone.jpg'), 'caption' => 'undone.html' ),
 );
-$GLOBALS['availableSculpture'] = array(
-	'Creature' =>			array('filenames' => 'creature_20131025.jpg', 
-							'caption' => 'creature.txt'),
-	'Monitor' => 			array('filenames' => 'monitor_20131025.jpg', 
-							'caption' => 'monitor.txt'),
-	'Three generations' =>	array('filenames' => 'three-generations_20131025.jpg',
-							 'caption' => 'three-generations.txt'),
+$GLOBALS['availableSculptures'] = array(
+	'Creature' =>			array('filenames' => array('creature.jpg'), 'caption' => 'creature.html'),
+	'Monitor' => 			array('filenames' => array('monitor.jpg'), 'caption' => 'monitor.html'),
+	'Three generations' =>	array('filenames' => array('three-generations.jpg'), 'caption' => 'three-generations.html'),
 );
 $GLOBALS['availablePrints'] = array(
 	'Zenbryonic' =>			array('filenames' => array(
-								'zenbryonic (brown)',
-								'zenbryonic(wraith grey)'), 
-								'caption' => 'zenbryonic.txt')),
+									'zenbryonic_brown.jpg',
+									'zenbryonic_wraith-grey.jpg'), 
+								'caption' => 'zenbryonic.html'),
 );
 $GLOBALS['availableWords'] = array(
 	'Cavern' =>				'cavern.html',

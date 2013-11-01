@@ -35,13 +35,13 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 ?>
 						<li class="section">Sculpture</li>
 <?php
-	foreach ($GLOBALS['availableSculpture'] as $title => $filename) {
+	foreach ($GLOBALS['availableSculptures'] as $title => $filename) {
 		echo '<li> <a href="/sculpture.php?title=' . $title . '">' . $title . '</a></li>';
 	}
 ?>
 						<li class="section">Photo</li>
 <?php
-	foreach ($GLOBALS['availablePhoto'] as $title => $filename) {
+	foreach ($GLOBALS['availablePhotos'] as $title => $filename) {
 		echo '<li> <a href="/photo.php?title=' . $title . '">' . $title . '</a></li>';
 	}
 ?>						

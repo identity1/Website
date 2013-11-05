@@ -11,6 +11,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 		<meta name="title" content="InsidesOut" />
 		<meta name="description" content="A few articles of work on Insides-Out." />
 		<link rel="stylesheet" type="text/css" href="/style/root.css" />
+		<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 	</head>
 	
 	<body>

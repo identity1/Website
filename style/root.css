@@ -89,9 +89,14 @@
 	clear:				both;
 }
 
-.centerpieceWrapper img {
+.centerpieceWrapper img,
+.centerpieceWrapper .exaltedWords {
 	clear:				both;
 	display:			block;
 	margin-left:		auto;
 	margin-right:		auto;
+}
+
+.exaltedWords {
+	text-align:			left;
 }

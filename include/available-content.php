@@ -2,7 +2,7 @@
 // the /images/photos folder should have these files, 
 // and there's a /thumbnails folder inside that folder which has images with the same name.
 $GLOBALS['availablePhotos'] = array(
-	'Title' =>				array( 'filenames' => array('little-one.jpg'), 'caption' => 'little-one.html' ),
+	'Little One' =>				array( 'filenames' => array('little-one.jpg'), 'caption' => 'little-one.html' ),
 	'Groundwater' => 		array( 'filenames' => array('groundwater.jpg'), 'caption' => 'groundwater.html' ),
 	'Russian Doll' =>		array( 'filenames' => array('russian-doll.jpg'), 'caption' => 'russian-doll.html' ),
 );

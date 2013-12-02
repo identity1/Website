@@ -258,7 +258,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 				}
 				pairs = pairs.concat(randomPairs);
 				var randomPair = pairs[Math.floor(Math.random() * pairs.length)]
-				$("#wordGenerator").text(randomPair[0], randomPair[1]);
+				$("#wordGenerator").text(randomPair[0] + " " + randomPair[1]);
 			});
 		</script>
 	</body>

@@ -8,9 +8,9 @@ ob_start();
 // {
 ?>
 		<div class="centerpieceWrapper">
-			<pre class="exaltedWords">
+			<div class="exaltedWords">
 				<?php include_once('words/' . $filename); ?>
-			</pre>
+			</div>
 		</div>
 
 <?php

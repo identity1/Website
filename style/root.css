@@ -97,6 +97,10 @@
 	margin-right:		auto;
 }
 
+.centerpieceWrapper .exaltedWords {
+	white-space:		pre-wrap;
+}
+
 .exaltedWords {
 	text-align:			left;
 }

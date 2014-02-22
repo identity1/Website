@@ -70,6 +70,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 					<a href="http://blog.insidesout.com">blog</a>
 					<a href="/info">info</a>
 					<a href="/projects">projects</a>
+					<a href="/contact">contact</a>
 					
 					<div class="clear"></div>
 				</div> <!-- #pages -->
@@ -129,9 +130,11 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 					'ideopraxist',
 					'ignite',
 					'ikat',
+					'ilk',
 					'ill',
 					'illegal',
 					'illusion',
+					'illustrious',
 					'imbalanced',
 					'imitate',
 					'immaculate',
@@ -209,6 +212,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 					'obsequious',
 					'obstacle',
 					'obtuse',
+					'obviate',
 					'occidentalis',
 					'ocean',
 					'ochre',
@@ -220,6 +224,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 					'of',
 					'office',
 					'official',
+					'oily',
 					'once',
 					'onion',
 					'ooze',

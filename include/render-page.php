@@ -7,9 +7,10 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>I/O</title> 
 		<meta charset="utf-8">
 		<meta name="title" content="InsidesOut" />
-		<meta name="description" content="A few articles of work on Insides-Out." />
+		<meta name="description" content="A few articles of work on InsidesOut." />
 		<link rel="stylesheet" type="text/css" href="/style/root.css" />
 		<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 	</head>
@@ -22,40 +23,51 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 		<div id="wrapper">
 			<div id="leftColumn">
 				<div class="logo">
-					<img src="/images/logo.png"/>
+					<a href="http://www.insidesout.com"><img src="/images/logo.png" 
+						style="-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none"/></a>
 				</div>
 				
 				<div class="navigation">
 					<ul>
-						
+
 						<li class="section">Drawings</li>
 <?php
 	foreach ($GLOBALS['availableDrawings'] as $title => $filename) {
 		echo '<li> <a href="/drawings.php?title=' . $title . '">' . $title . '</a></li>';
 	}
 ?>
+
 						<li class="section">Sculpture</li>
 <?php
 	foreach ($GLOBALS['availableSculptures'] as $title => $filename) {
 		echo '<li> <a href="/sculpture.php?title=' . $title . '">' . $title . '</a></li>';
 	}
 ?>
+						
 						<li class="section">Photo</li>
 <?php
 	foreach ($GLOBALS['availablePhotos'] as $title => $filename) {
 		echo '<li> <a href="/photo.php?title=' . $title . '">' . $title . '</a></li>';
 	}
-?>						
+?>							
+
 						<li class="section">Prints</li>
 <?php
 	foreach ($GLOBALS['availablePrints'] as $title => $filename) {
 		echo '<li> <a href="/prints.php?title=' . $title . '">' . $title . '</a></li>';
 	}
 ?>						
+						
 						<li class="section">Words</li>
 <?php
 	foreach ($GLOBALS['availableWords'] as $title => $filename) {
 		echo '<li> <a href="/words.php?title=' . $title . '">' . $title . '</a></li>';
+	}
+?>
+						<li class="section">Projects</li>
+<?php
+	foreach ($GLOBALS['availableProjects'] as $title => $filename) {
+		echo '<li> <a href="' . $filename . '">' . $title . '</a></li>';
 	}
 ?>
 					</ul>
@@ -65,12 +77,17 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 			
 			<div id="rightColumn">
 				<div id="pages">
-				
-					<a href="/work">work</a>
+					
+					<a href="#">
+						<a class="thumbnail" href="#">
+						<img src="/images/emailsymbol.png" 
+						style="-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none"><span>
+						<img src="/images/contacthover.png"
+						style="-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none"></span>
+					</a>
 					<a href="http://blog.insidesout.com">blog</a>
-					<a href="/info">info</a>
-					<a href="/projects">projects</a>
-					<a href="/contact">contact</a>
+					<a href="/about.php">about</a>
+					
 					
 					<div class="clear"></div>
 				</div> <!-- #pages -->
@@ -87,6 +104,10 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script type="text/javascript">
 			$( document ).ready(function() {
+				$('.navigation .section').click(function() {
+					$(this).find('ul').toggle();
+				});
+
 				var pairs = [
 					['icelandic', 'origins'], 
 					['ide', 'ology'], 
@@ -119,7 +140,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 				];
 
 				var eyes = [
-					'ice',
+					'icy',
 					'ichthyosis',
 					'id',
 					'idea',
@@ -205,6 +226,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 					];
 
 				var ohs = [
+					'obfuscate',
 					'object',
 					'objectivism',
 					'oblong',
@@ -219,6 +241,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 					'octane',
 					'octave',
 					'octopod',
+					'octopus',
 					'odds',
 					'oddball',
 					'of',
@@ -227,6 +250,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 					'oily',
 					'once',
 					'onion',
+					'onus',
 					'ooze',
 					'open',
 					'opening',

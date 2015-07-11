@@ -1,16 +1,12 @@
 <?php
 require_once('include/render-page.php');
 
-$filename = $GLOBALS['availableWords'][$_GET['title']];
-
 ob_start();
 // foreach($content as $filename)
 // {
 ?>
 		<div class="centerpieceWrapper">
-			<p class="exaltedWords">
-				<?php include_once('words/' . $filename); ?>
-			</pre>
+				<?php include_once('jssor.slider/image-gallery-with-vertical-thumbnail.source_edit.html'); ?>
 		</div>
 
 <?php

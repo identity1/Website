@@ -2,10 +2,13 @@
 // the /images/photos folder should have these files, 
 // and there's a /thumbnails folder inside that folder which has images with the same name.
 $GLOBALS['availablePhotos'] = array(
-	'Little One' =>				array( 'filenames' => array('little-one.jpg'), 'caption' => 'little-one.html' ),
+	'Liber' =>				array( 'filenames' => array('liber.jpg'), 'caption' => 'liber.html' ),
+	'Little one' =>				array( 'filenames' => array('little-one.jpg'), 'caption' => 'little-one.html' ),
 	'Groundwater' => 		array( 'filenames' => array('groundwater.jpg'), 'caption' => 'groundwater.html' ),
-	'Russian Doll' =>		array( 'filenames' => array('russian-doll.jpg'), 'caption' => 'russian-doll.html' ),
-);
+	'Speckled pup' => 		array( 'filenames' => array('speckled-pup.jpg'), 'caption' => 'speckled-pup.html' ),
+	'Russian doll' =>		array( 'filenames' => array('russian-doll.jpg'), 'caption' => 'russian-doll.html' ),
+	'*Snapshots' =>		array('filenames' => array('s1.jpg'), 'caption' => '*snapshots.html'),
+	);
 $GLOBALS['availableDrawings'] = array(
 	'Airport' =>			array( 'filenames' => array('airport.jpg'), 'caption' => 'airport.html' ),
 	'Pop' => 				array( 'filenames' => array('pop.jpg'), 'caption' => 'pop.html' ),
@@ -18,8 +21,7 @@ $GLOBALS['availableSculptures'] = array(
 );
 $GLOBALS['availablePrints'] = array(
 	'Zenbryonic' =>			array('filenames' => array(
-									'zenbryonic_brown.jpg',
-									'zenbryonic_wraith-grey.jpg'), 
+									'zenbryonic.jpg'), 
 								'caption' => 'zenbryonic.html'),
 );
 $GLOBALS['availableWords'] = array(
@@ -32,5 +34,8 @@ $GLOBALS['availableWords'] = array(
 	'Silence' =>			'silence.html',
 	'Talking rain' =>		'talking-rain.html',
 	'Word' =>				'word.html',
+);
+$GLOBALS['availableProjects'] = array(
+	'Artchive' =>			'artchive.php',
 );
 ?>

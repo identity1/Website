@@ -1,13 +1,22 @@
 @CHARSET "UTF-8";
 
-#wrapper {
-	margin:			0 auto;
+body {
 	font-family:	Arial;
 	color:			#666;
 }
 
+img {   
+	-webkit-box-shadow: 2px 3px 8px 0 #808080;
+  -moz-box-shadow: 3px 3px 8px 0 #808080;
+  box-shadow: 3px 3px 8px 0 #808080;
+}
+
+#wrapper {
+	margin:			0 auto;
+}
+
 #leftColumn {
-	width:			20%;
+	width:			18%;
 	float:			left;
 }
 #rightColumn {
@@ -16,17 +25,17 @@
 }
 
 #rightColumn #pages a {
-	padding-top:		6.0em;
-	padding-bottom:		1.0em;
+	padding-top:		4.4em;
+	padding-bottom:		0.7em;
 	width:				10%;
 }
 
 #rightColumn #pages a,
 .navigation {
 	display:			block;
-	float:				left;
+	float:				right;
 	text-decoration:	none;
-	font-size:			1.25em;
+	font-size:			1.2em;
 	letter-spacing:		0.1em;
 	color:				#666;
 }
@@ -49,15 +58,19 @@
 
 #leftColumn .logo,
 #rightColumn #pages {
-	height:				150px;
+	height:				110px;
+	width:				85%;
+}
+
+#rightColumn #pages {
+	text-align:			center;
 }
 
 #rightColumn #stage {
-	width:				85%;
+	width:				80%;
 }
 #rightColumn #stage img {
 	max-width:			100%;
-	max-height:			100%;
 }
 
 #leftColumn .navigation {
@@ -66,7 +79,7 @@
 #leftColumn .navigation .section {
 	font-size:			1.1em;
 	font-weight:		bold;
-	margin-top:			1.0em;
+	margin-top:			0.5em;
 	margin-bottom:		0.2em;
 	color:				#333;
 }
@@ -85,6 +98,12 @@
 	text-decoration:	underline;
 }
 
+#leftColumn li ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
 .clear {
 	clear:				both;
 }
@@ -95,6 +114,7 @@
 	display:			block;
 	margin-left:		auto;
 	margin-right:		auto;
+	margin-bottom: 2.0em;
 }
 
 .centerpieceWrapper .exaltedWords {
@@ -103,4 +123,43 @@
 
 .exaltedWords {
 	text-align:			left;
+}
+
+/*THUMBNAIL HOVERPOPUPS*/
+
+.thumbnail  {
+	position: relative;
+	float: left;
+	padding: 5px;
+	/*z-index: 0;*/
+}
+
+.thumbnail:hover {
+	/*background-color: #e9e9e2;*/
+	/*z-index: 50;*/
+	color: #335500;
+	text-decoration: none;
+}
+
+.thumbnail span { /*CSS for enlarged image*/
+	position: absolute;
+	/*background-color: #e5e5e5;*/
+	padding: 5px;
+	/*left: -1000px;*/
+	/*border: 1px solid #666;*/
+	visibility: hidden;
+	color: black;
+	text-decoration: none;
+}
+
+.thumbnail span img { /*CSS for enlarged image*/
+	border-width: 0px; 
+	/*padding: 2px;*/
+}
+
+.thumbnail:hover span { /*CSS for enlarged image on hover*/
+	visibility: visible; 
+	/*width: 200px;*/
+	top: 40px; /* use IF IE6 style to correct IE6 positions of larger image relative to thumb */
+	left: -100px;/*position where enlarged image should offset horizontally */
 }

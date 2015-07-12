@@ -20,9 +20,7 @@ $GLOBALS['availableSculptures'] = array(
 	'Three generations' =>	array('filenames' => array('three-generations.jpg'), 'caption' => 'three-generations.html'),
 );
 $GLOBALS['availablePrints'] = array(
-	'Zenbryonic' =>			array('filenames' => array(
-									'zenbryonic.jpg'), 
-								'caption' => 'zenbryonic.html'),
+	'Zenbryonic' =>			array('filenames' => array('zenbryonic.jpg'), 'caption' => 'zenbryonic.html'),
 );
 $GLOBALS['availableWords'] = array(
 	'Cavern' =>				'cavern.html',
@@ -36,6 +34,7 @@ $GLOBALS['availableWords'] = array(
 	'Word' =>				'word.html',
 );
 $GLOBALS['availableProjects'] = array(
-	'Artchive' =>			'artchive.php',
+	'Discretized' =>	array('filenames' => array('d1.jpg')),
+	'Artchive' =>			array('filenames' => array('coki.jpg')),
 );
 ?>

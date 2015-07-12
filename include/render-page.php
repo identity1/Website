@@ -67,7 +67,7 @@ function renderPage($stageContent = '<h3>Placeholder</h3>')
 						<li class="section">Projects</li>
 <?php
 	foreach ($GLOBALS['availableProjects'] as $title => $filename) {
-		echo '<li> <a href="' . $filename . '">' . $title . '</a></li>';
+		echo '<li> <a href="/projects.php?title=' . $title . '">' . $title . '</a></li>';
 	}
 ?>
 					</ul>
